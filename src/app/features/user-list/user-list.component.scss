@@ -1,0 +1,30 @@
+.user-list-container {
+    margin: 16px;
+
+    .table-title {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        gap: 85%;
+
+        .add-user-icon {
+            cursor: pointer;
+            font-size: 24px;
+        }
+    }
+
+    .table {
+        td {
+            span {
+                margin: 0 4px 0 4px;
+            }
+        }
+    }
+
+    .action-icons {
+        i {
+            cursor: pointer;
+            margin: 0 16px 0 16px;
+        }
+    }
+}

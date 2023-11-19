@@ -1,0 +1,33 @@
+<div class="user-list-container">
+    <div class="table-title">
+        <h5>List of users</h5>
+        <i class="bi bi-person-add add-user-icon"></i>
+    </div>
+    <table class="table caption-top">
+        <thead>
+          <tr>
+            <th scope="col">#</th>
+            <th scope="col">username</th>
+            <th scope="col">email</th>
+            <th scope="col">groups</th>
+            <th scope="col">edit/delete user</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let user of users; let i=index">
+            <th scope="row">{{ i+1 }}</th>
+            <td>{{ user.username }}</td>
+            <td>{{ user.email }}</td>
+            <td>
+                <span *ngFor="let group of user.groups" class="badge rounded-pill text-bg-dark">{{ group.groupName }}</span> 
+            </td>
+            <td>
+                <div class="action-icons">
+                    <i class="bi bi-pencil"></i>
+                    <i class="bi bi-trash"></i>
+                </div>
+            </td>
+          </tr>
+        </tbody>
+    </table>
+</div>
