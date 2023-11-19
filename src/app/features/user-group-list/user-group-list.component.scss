@@ -1,14 +1,14 @@
-.user-list-container {
+.user-group-list-container {
     margin: 16px;
 
     .table-title {
         display: flex;
         flex-wrap: wrap;
         align-items: center;
-        gap: 85%;
+        gap: 80%;
         margin-bottom: 16px;
 
-        .add-user-icon {
+        .add-user-group-icon {
             cursor: pointer;
             font-size: 24px;
             padding: 0 8px 0 8px;

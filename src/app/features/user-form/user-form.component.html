@@ -1,0 +1,16 @@
+<div class="user-form-container">
+    <form [formGroup]="userForm" (ngSubmit)="onSubmit()">
+        <label for="username">Username:</label>
+        <input type="text" id="username" formControlName="username" />
+      
+        <label for="email">Email:</label>
+        <input type="email" id="email" formControlName="email" />
+      
+        <label for="group">User Group:</label>
+        <select id="group" formControlName="group">
+          <option *ngFor="let group of userGroups" [value]="group">{{ group }}</option>
+        </select>
+      
+        <button type="submit" [disabled]="userForm.invalid">Add User</button>
+    </form> 
+</div>
