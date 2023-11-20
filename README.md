@@ -3,6 +3,7 @@
 This is a work in progress application that aimed to build a user management application.
 Although incomplete, at the moment list of users and list of groups are displayed with 
 the help of dummy services.
+Note - Due to time limitation, the forms to add user and user groups could not be completed.
 
 ## Setup
 
