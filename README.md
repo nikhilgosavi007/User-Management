@@ -12,7 +12,7 @@ After cloning this repository, run `npm install` to install all the dependencies
 ## Development server
 
 Run `npm run start` for a dev server. 
-Navigate to `http://localhost:4200/`.
+Navigate to `http://localhost:4200/` to view the application.
 
 ## Build
 
