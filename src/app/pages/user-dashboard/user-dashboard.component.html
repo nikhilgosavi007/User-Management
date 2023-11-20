@@ -1,2 +1,21 @@
-<app-user-list></app-user-list>
-<app-user-group-list></app-user-group-list>
+<div class="user-dashboard-container">
+    <h3> User Dashboard </h3>
+
+    <ul class="nav nav-tabs">
+        <li class="nav-item" (click)="activeTab = 'Users'">
+            <a class="nav-link" [ngClass]="{'active': activeTab === 'Users'}">Users</a>
+        </li>
+        <li class="nav-item" (click)="activeTab = 'Groups'">
+            <a class="nav-link" [ngClass]="{'active': activeTab === 'Groups'}">User Groups</a>
+        </li>
+    </ul>
+
+    <ng-container [ngSwitch]="activeTab">
+        <ng-template [ngSwitchCase]="'Users'">
+            <app-user-list></app-user-list>
+        </ng-template>
+        <ng-template [ngSwitchCase]="'Groups'">
+            <app-user-group-list></app-user-group-list>
+        </ng-template>
+    </ng-container>    
+</div>
